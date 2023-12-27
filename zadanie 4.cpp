@@ -26,7 +26,7 @@ void index2() {
         cout << "Введите конечный индекс: ";
         cin >> end_index;
 
-        if (start_index <= end_index && end_endeex <= digits.size()) {
+        if (start_index <= end_index && end_index <= digits.size()) {
             vector<char> digit_range(digits.begin() + start_index - 1, digits.begin() + end_index);
             cout << "Диапазон цифр с индекса " << start_index << " по индекс " << end_index << ": ";
             for (char c : digit_range) {
