@@ -26,7 +26,7 @@ void index2() {
         cout << "Введите конечный индекс: ";
         cin >> end_index;
 
-        if (start_index <= end_index && end_index <= digits.size()) {
+        if (start_index <= end_index && end_endeex <= digits.size()) {
             vector<char> digit_range(digits.begin() + start_index - 1, digits.begin() + end_index);
             cout << "Диапазон цифр с индекса " << start_index << " по индекс " << end_index << ": ";
             for (char c : digit_range) {
@@ -80,7 +80,7 @@ void index1() {
 int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    setlocale(LC_ALL, "RUS");
+    setlocale(LC_ALL, "ru");
     int o;
     cout << "конкретный номер индекса - то нажмите 1; областью - то нажмите 2 ";
     cin >> o;
@@ -91,7 +91,7 @@ int main() {
         index2();
     }
     else {
-        cout << "Ошибка! цифра должна быть равна 1 или 2";
+        cout << "Ошибка! цифра должна быть равна 1 или 2"; 
     }
     return 0;
 }
